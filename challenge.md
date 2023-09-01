@@ -21,7 +21,9 @@ Resumen: Crear una vista web que muestre un mapa como sección principal, seguid
 #### Wireframe bajo nivel del posible resultado
 ![Ejemplo](assets/viewExample.png)
 #### Servicio
-- GET: `https://5qewqsdgrl.execute-api.us-west-1.amazonaws.com//challenge/route/dummy`
+- Metodo: GET
+- Endpoint:
+[https://5qewqsdgrl.execute-api.us-west-1.amazonaws.com//challenge/route/dummy](https://5qewqsdgrl.execute-api.us-west-1.amazonaws.com//challenge/route/dummy)
 
 ### Tecnologías
 Idealmente, buscamos que implementes el desafío utilizando las siguientes tecnologías:
@@ -52,5 +54,5 @@ Se estima que esta prueba técnica tomará aproximadamente 8 horas para completa
 - Pruebas (Testing).
 - Estilo y acabado.
 - Responsividad
-- Cualquier mejora/funcionalidad/estilado sera tomada muy en cuenta
+- Cualquier mejora/funcionalidad/estilado extra sera tomada muy en cuenta
 - El layout es solo una propuesta  no hay limite en la creatividad
