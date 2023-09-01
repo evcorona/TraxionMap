@@ -40,7 +40,7 @@ Idealmente, buscamos que implementes el desafío utilizando las siguientes tecno
 
 ## Tiempo Estimado
 
-Se estima que esta prueba técnica tomará aproximadamente 8 horas para completarse.
+Se estima que esta prueba técnica tomará aproximadamente un dia y medio o dos dias para completarse.
 
 ## Recursos Adicionales
 
