@@ -7,7 +7,7 @@ Resumen: Crear una vista web que muestre un mapa como sección principal, seguid
 #### Sección 1
 - El mapa debe ser el elemento principal. Modificar su estilo para que no sea el predeterminado.
 - En el mapa, representa la ruta proporcionada en el geojson que se obtiene del endpoint en la seccion de "Servicio":
-  - Nota: El endpoint devuelve datos variados; debes identificar el geojson y representar la ruta. [Ejemplo de geojson](assets/exampleRoute.geojson) [ejemplo data en json format](assets/exampleRouteGeoJson.json)
+  - Nota: El endpoint devuelve datos variados; debes identificar el geojson y representar la ruta. [Ejemplo de geojson](assets/exampleRoute.geojson)
 
 #### Sección 2
 - Representa una lista de vehículos (a partir de [la lista de vehículos ficticios proporcionada](assets/carMock.json)).
