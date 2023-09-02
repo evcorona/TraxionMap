@@ -1,15 +1,15 @@
-import Image from 'next/image';
+import clsx from 'clsx';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <Image
-        src='/traxion_logo.svg'
-        alt='Traxion Logotype'
-        width={180}
-        height={37}
-        priority
-      />
+    <main
+      className={clsx(
+        'mt-14 p-2',
+        'flex flex-col',
+        'items-center justify-between',
+        'h-screen'
+      )}
+    >
       <h1>Technical test</h1>
     </main>
   );
