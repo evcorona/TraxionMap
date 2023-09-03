@@ -22,7 +22,7 @@ export default function RootLayout({
       <body
         className={clsx(
           inter.className,
-          'px-4 md:px-8',
+          'relative',
           'bg-slate-100',
           'scrollbar-thin',
           'scrollbar-track-transparent',
@@ -31,22 +31,36 @@ export default function RootLayout({
       >
         <nav
           className={clsx(
-            'fixed top-0 left-0',
-            'w-full h-12 px-4 md:px-8',
-            'flex',
-            'justify-between items-center',
+            'w-full',
+            'fixed top-0 left-0 z-50',
             'bg-slate-100/25 backdrop-blur-sm'
           )}
         >
-          <Image
-            src='/traxion_logo.svg'
-            alt='Traxion Logotype'
-            width={140}
-            height={10}
-            priority
-          />
+          <div
+            className={clsx(
+              'container h-14',
+              'mx-auto px-4 md:px-8',
+              'flex',
+              'justify-center items-center'
+            )}
+          >
+            <Image
+              src='/traxion_logo.svg'
+              alt='Traxion Logotype'
+              width={140}
+              height={10}
+              priority
+            />
+          </div>
         </nav>
-        {children}
+        <main
+          className={clsx(
+            'container h-screen',
+            'mx-auto px-4 md:px-8 pb-4 mt-16'
+          )}
+        >
+          {children}
+        </main>
       </body>
     </html>
   );
