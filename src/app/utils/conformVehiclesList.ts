@@ -1,17 +1,17 @@
-import { Vehicle } from 'types';
-import VehicleMockList from 'assets/carMock.json';
+import { Vehicle } from 'types'
+import VehicleMockList from 'assets/carMock.json'
 
 interface VehicleMock {
-  placa: string;
-  'numero economico': string;
-  vim: string;
-  asientos: number;
-  seguro: string;
-  'segure numebr': string;
-  BRAND: string;
-  MODEL: string;
-  YEAR: number;
-  COLOR: string;
+  placa: string
+  'numero economico': string
+  vim: string
+  asientos: number
+  seguro: string
+  'segure numebr': string
+  BRAND: string
+  MODEL: string
+  YEAR: number
+  COLOR: string
 }
 
 export default function conformVehiclesList(): Vehicle[] {
@@ -27,6 +27,6 @@ export default function conformVehiclesList(): Vehicle[] {
       seatingCapacity: vehicle.asientos,
       vin: vehicle.vim,
       year: vehicle.YEAR,
-    };
-  });
+    }
+  })
 }
