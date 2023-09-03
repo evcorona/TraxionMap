@@ -1,4 +1,4 @@
-name: Lint Check and Code Format
+name: Code Format and Lint Check
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   check-code:
-    name: Check code
+    name: Code Format and Lint Check
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
