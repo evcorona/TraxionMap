@@ -1,4 +1,4 @@
-import './globals.css'
+import './styles/global.scss'
 
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
@@ -38,7 +38,7 @@ export default function RootLayout({
         >
           <div
             className={clsx(
-              'container h-14',
+              'container h-12',
               'mx-auto px-4 md:px-8',
               'flex',
               'items-center justify-center'
@@ -47,7 +47,7 @@ export default function RootLayout({
             <Image
               src="/traxion_logo.svg"
               alt="Traxion Logotype"
-              width={140}
+              width={120}
               height={10}
               priority
             />
@@ -56,7 +56,7 @@ export default function RootLayout({
         <main
           className={clsx(
             'container h-screen',
-            'mx-auto mt-16 px-4 pb-4 md:px-8'
+            'mx-auto mt-20 px-4 pb-4 md:px-8'
           )}
         >
           {children}

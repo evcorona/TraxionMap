@@ -16,7 +16,8 @@ export default function Input(props: Props) {
           'w-full p-2 pl-10',
           'rounded-md',
           'appearance-none caret-brand',
-          'border focus:outline-brand'
+          'border focus:outline-brand',
+          'hover:ring-1 hover:ring-brand'
         )}
       />
       {props.type === 'search' && (
