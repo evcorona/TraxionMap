@@ -1,7 +1,7 @@
 import { Vehicle } from 'types'
 import VehicleMockList from 'assets/carMock.json'
 
-interface VehicleMock {
+type VehicleMock = {
   placa: string
   'numero economico': string
   vim: string

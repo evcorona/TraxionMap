@@ -12,7 +12,7 @@ import L from 'leaflet'
 import { MapRoute } from 'types'
 import RoutesHandler from 'components/Map/RoutesHandler'
 
-interface Props {
+type Props = {
   mapRoutes: MapRoute[]
 }
 
