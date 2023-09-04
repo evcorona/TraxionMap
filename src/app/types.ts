@@ -1,6 +1,6 @@
 import { GeoJsonObject } from 'geojson'
 
-export type Vehicle = {
+export interface Vehicle {
   brand: string
   color: string
   economicNumber: string
@@ -13,7 +13,12 @@ export type Vehicle = {
   year: number
 }
 
-export type MapRoute = {
+export interface DataProperty {
+  accessor: string
+  header: string
+}
+
+export interface MapRoute {
   route_title: string
   route_id: string
   geojson: GeoJsonObject

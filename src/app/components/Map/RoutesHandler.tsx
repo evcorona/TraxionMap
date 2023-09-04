@@ -8,7 +8,7 @@ import Select from 'components/Select'
 import { addGeoJsonObject } from 'utils/geoJsonActions'
 import { useEffect } from 'react'
 
-interface Props {
+type Props = {
   mapRef: L.Map
   featureGroupRef: L.FeatureGroup
   mapRoutes: MapRoute[]
@@ -47,6 +47,7 @@ export default function RoutesHandler(props: Props) {
         <span className="hidden md:block">Reiniciar</span>
       </Button>
       <Select
+        name="routes"
         label="Rutas"
         onChange={onChangeHandler}
         options={options}

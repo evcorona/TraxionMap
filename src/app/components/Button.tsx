@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-interface Props {
+type Props = {
   onClick: () => void
   type: 'reset' | 'submit'
   children: React.ReactNode
@@ -12,7 +12,7 @@ export default function Button(props: Props) {
       onClick={props.onClick}
       className={clsx(
         'p-2 px-4',
-        'rounded-md bg-gray-400  ',
+        'rounded-md bg-gray-400 ',
         'text-sm font-semibold uppercase text-white',
         'hover:text-brand'
       )}
