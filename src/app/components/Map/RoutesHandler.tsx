@@ -44,7 +44,7 @@ export default function RoutesHandler(props: Props) {
     <form className="flex w-full items-center justify-between py-2">
       <Button onClick={resetHandler} type="reset">
         <ArrowUturnLeftIcon className="w-5" />
-        Reiniciar
+        <span className="hidden md:block">Reiniciar</span>
       </Button>
       <Select
         label="Rutas"
