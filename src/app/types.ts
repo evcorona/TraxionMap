@@ -1,3 +1,5 @@
+import { GeoJsonObject } from 'geojson'
+
 export type Vehicle = {
   brand: string
   color: string
@@ -9,4 +11,10 @@ export type Vehicle = {
   seatingCapacity: number
   vin: string
   year: number
+}
+
+export type MapRoute = {
+  route_title: string
+  route_id: string
+  geojson: GeoJsonObject
 }
