@@ -1,26 +1,37 @@
 import clsx from 'clsx'
 
-interface Props {
+export type Option = {
+  value: string
+  name: string
+}
+
+type Props = {
+  name: string
   onChange: React.ChangeEventHandler<HTMLSelectElement>
-  label: string
   placeholder: string
-  options: {
-    value: string
-    name: string
-  }[]
+  options: Option[]
+  join?: boolean
+  label?: string
+  classNameContainer?: string
+  className?: string
 }
 
 export default function Select(props: Props) {
   return (
-    <div className="space-x-4 py-2">
-      <label>{props.label}</label>
+    <div className={clsx('space-x-4', props.classNameContainer)}>
+      {props.label && <label>{props.label}</label>}
       <select
-        name="routes"
+        name={props.name}
         className={clsx(
-          'max-w-full-sm min-w-max p-2 px-4',
-          'appearance-none rounded-md border',
-          'hover:ring-1 hover:ring-brand',
-          'focus:outline-brand'
+          'max-w-full-sm min-w-max p-2 md:px-4',
+          'border-2 capitalize',
+          'outline-none',
+          'focus:border-brand focus:ring-brand',
+          'hover:border-brand hover:ring-brand',
+          {
+            'rounded-md': !props.join,
+          },
+          props.className
         )}
         onChange={props.onChange}
       >
