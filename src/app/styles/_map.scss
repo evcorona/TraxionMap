@@ -1,0 +1,16 @@
+@import 'leaflet/dist/leaflet.css';
+
+.map-marker {
+  stroke: rgba(0, 0, 0, 0.548);
+  stroke-width: 10px;
+}
+
+.map-popup {
+  .leaflet-popup-content-wrapper {
+    background-color: lightgray;
+    font-size: 10px;
+  }
+  .leaflet-popup-tip {
+    background-color: lightgrey;
+  }
+}
