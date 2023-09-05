@@ -1,4 +1,5 @@
 import { GeoJsonObject } from 'geojson'
+import { LatLngTuple } from 'leaflet'
 
 export interface Vehicle {
   brand: string
@@ -11,6 +12,7 @@ export interface Vehicle {
   seatingCapacity: number
   vin: string
   year: number
+  coordinates: LatLngTuple
 }
 
 export interface DataProperty {
