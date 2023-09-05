@@ -1,32 +1,49 @@
-# Prueba Técnica - Desarrollador frontend
+# Technical Test - Frontend developer
 
-¡Bienvenido a la prueba técnica para el puesto de Desarrollador FrontEnd en Traxi!
+[![CodeFactor](https://www.codefactor.io/repository/github/evcorona/traxionmap/badge)](https://www.codefactor.io/repository/github/evcorona/traxionmap)
+![Actions](https://github.com/evcorona/TraxionMap/actions/workflows/format-code.yml/badge.svg)
+![Vercel](https://vercelbadge.vercel.app/api/evcorona/traxionmap)
 
-En esta prueba, tendrás la oportunidad de demostrar tus habilidades y conocimientos en el desarrollo de aplicaciones web. Asegúrate de leer detenidamente las instrucciones y los requisitos antes de comenzar.
+[The challenge](challenge.md)
 
-Recuerda que esta prueba está diseñada para evaluar tus capacidades y experiencia, por lo que te recomendamos seguir las mejores prácticas de desarrollo y mantener un código limpio y bien estructurado.
+---
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-¡Buena suerte y esperamos ver tu talento en acción!
+## 🏃 Run Scripts
 
-## Instrucciones
+Run the development server:
 
-1. Clona este repositorio en tu máquina local.
-2. Crea una nueva rama para trabajar en la prueba.
-3. Sigue las instrucciones proporcionadas en el archivo [challenge](challenge.md) para completar la prueba.
-4. Asegúrate de hacer commits frecuentes a medida que avanzas en el desarrollo.
-5. Una vez que hayas terminado, crea un pull request con tu solución hacia la rama principal del repositorio.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev (recommended)
+```
 
-## Requisitos
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- Conocimientos en desarrollo web frontend utilizando:
-  - JavaScript y preferiblemente TypeScript.
-  - ReactJS y/o Next.js.
-- Familiaridad con el uso de herramientas de control de versiones como Git.
+## Technologies
 
-Si tienes alguna pregunta o necesitas aclaraciones, no dudes en comunicarte con nosotros. ¡Estamos aquí para ayudarte!
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [React-Leaflet Documentation](https://react-leaflet.js.org/docs/start-introduction/)
+- [Leaftlet Documentation](https://leafletjs.com/reference.html)
 
-¡Que tengas una excelente prueba técnica!
+---
 
-Atentamente,
-El equipo de enseñanza de Traxi ❤
-Traxi teach team ❤# trx_frontend_dev_technical_test
+## ⌨️ Author
+
+<table>
+  <tr>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/73207023?s=460&u=4cff370b3f10790ee07402fc579e2272a946af86&v=4?" width="90" alt="veroxcrown">
+    </td>
+    <td>
+      Verónica Corona<br />
+      <a href="https://github.com/evcorona">@evcorona 😊<br/></a>
+      <a href="mailto:eldav.corona@gmailcom">Say hello!</a>
+    </td>
+  </tr>
+</table>
