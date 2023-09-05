@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "@react-leaflet/core": "^2.1.0",
+    "@types/geojson": "^7946.0.10",
     "@types/node": "20.5.8",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
@@ -22,6 +22,7 @@
     "clsx": "^2.0.0",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
+    "geojson": "^0.5.0",
     "leaflet": "^1.9.4",
     "next": "13.4.19",
     "postcss": "8.4.29",
@@ -32,7 +33,6 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/geojson": "^7946.0.10",
     "@types/leaflet": "^1.9.4",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
