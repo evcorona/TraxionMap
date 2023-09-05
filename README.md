@@ -1,5 +1,7 @@
 # Technical Test - Frontend developer
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/415ecbc0692a0b569fbe/maintainability)](https://codeclimate.com/github/evcorona/TraxionMap/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/415ecbc0692a0b569fbe/test_coverage)](https://codeclimate.com/github/evcorona/TraxionMap/test_coverage)
 [![CodeFactor](https://www.codefactor.io/repository/github/evcorona/traxionmap/badge)](https://www.codefactor.io/repository/github/evcorona/traxionmap)
 ![Actions](https://github.com/evcorona/TraxionMap/actions/workflows/format-code.yml/badge.svg)
 ![Vercel](https://vercelbadge.vercel.app/api/evcorona/traxionmap)
