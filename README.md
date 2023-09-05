@@ -19,8 +19,8 @@ Recuerda que esta prueba está diseñada para evaluar tus capacidades y experien
 ## Requisitos
 
 - Conocimientos en desarrollo web frontend utilizando:
-    - JavaScript y preferiblemente TypeScript.
-    - ReactJS y/o Next.js.
+  - JavaScript y preferiblemente TypeScript.
+  - ReactJS y/o Next.js.
 - Familiaridad con el uso de herramientas de control de versiones como Git.
 
 Si tienes alguna pregunta o necesitas aclaraciones, no dudes en comunicarte con nosotros. ¡Estamos aquí para ayudarte!
