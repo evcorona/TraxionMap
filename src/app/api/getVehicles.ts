@@ -14,7 +14,11 @@ type VehicleMock = {
   COLOR: string
 }
 
-export default function conformVehiclesList(): Vehicle[] {
+function randomLocation(min: number, max: number) {
+  return Math.random() * (max - min) + min
+}
+
+export default function getVehicles(): Vehicle[] {
   return VehicleMockList.map((vehicle: VehicleMock) => {
     return {
       brand: vehicle.BRAND,
@@ -27,6 +31,7 @@ export default function conformVehiclesList(): Vehicle[] {
       seatingCapacity: vehicle.asientos,
       vin: vehicle.vim,
       year: vehicle.YEAR,
+      coordinates: [randomLocation(19.4, 19.6), randomLocation(-99.19, -99.29)],
     }
   })
 }

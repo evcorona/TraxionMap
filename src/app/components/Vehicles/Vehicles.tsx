@@ -4,8 +4,9 @@ import { DataProperty, Vehicle } from 'types'
 import VehicleContext, { VehicleState } from 'contexts/vehicle'
 import { useEffect, useState } from 'react'
 
-import VehiclesContent from 'components/Vehicles/VehiclesContent'
-import conformVehiclesList from 'utils/conformVehiclesList'
+import SearchBar from 'components/SearchBar'
+import Table from 'components/Table'
+import getVehicles from 'api/getVehicles'
 
 const VEHICLES_HEADERS: DataProperty[] = [
   { accessor: 'plateNumber', header: 'matricula' },
@@ -21,7 +22,7 @@ const VEHICLES_HEADERS: DataProperty[] = [
 ]
 
 export default function Vehicles() {
-  const allVehicles = conformVehiclesList()
+  const allVehicles = getVehicles()
   const defaultProperty = VEHICLES_HEADERS[0].accessor
 
   const [listFiltered, setListFiltered] = useState<Vehicle[]>(allVehicles)
@@ -47,6 +48,7 @@ export default function Vehicles() {
     setListFiltered(dataFiltered)
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => filterData(allVehicles), [searchValue])
 
   const initialVehicleState: VehicleState = {
@@ -58,7 +60,8 @@ export default function Vehicles() {
 
   return (
     <VehicleContext.Provider value={initialVehicleState}>
-      <VehiclesContent />
+      <SearchBar />
+      <Table />
     </VehicleContext.Provider>
   )
 }

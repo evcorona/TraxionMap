@@ -1,10 +1,13 @@
 import { DataProperty, Vehicle } from 'types'
 
+import HomeContext from 'contexts/home'
 import VehicleContext from 'contexts/vehicle'
+import clsx from 'clsx'
 import { useContext } from 'react'
 
 export default function Table() {
   const { dataProperties, data } = useContext(VehicleContext)
+  const { vehicleSelected, setVehicleSelected } = useContext(HomeContext)
 
   return (
     <div className="overflow-x-auto">
@@ -27,7 +30,14 @@ export default function Table() {
             return (
               <tr
                 key={vehicle.plateNumber}
-                className="text-sm text-gray-500 hover:bg-brand"
+                className={clsx(
+                  'cursor-pointer text-sm text-gray-500 hover:bg-brand',
+                  {
+                    'bg-black text-white':
+                      vehicle.plateNumber === vehicleSelected?.plateNumber,
+                  }
+                )}
+                onClick={() => setVehicleSelected(vehicle)}
               >
                 {dataProperties.map((header: DataProperty, i) => {
                   const value = vehicle[header.accessor as keyof Vehicle]

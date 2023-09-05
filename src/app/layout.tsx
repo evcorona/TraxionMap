@@ -33,7 +33,8 @@ export default function RootLayout({
           className={clsx(
             'w-full',
             'fixed left-0 top-0 z-50',
-            'bg-slate-100/25 backdrop-blur-sm'
+            'bg-slate-100/25 backdrop-blur-sm',
+            'shadow-md'
           )}
         >
           <div
@@ -47,18 +48,13 @@ export default function RootLayout({
             <Image
               src="/traxion_logo.svg"
               alt="Traxion Logotype"
-              width={120}
+              width={145}
               height={10}
               priority
             />
           </div>
         </nav>
-        <main
-          className={clsx(
-            'container h-screen',
-            'mx-auto mt-20 px-4 pb-4 md:px-8'
-          )}
-        >
+        <main className="container mx-auto mt-16 h-screen px-4 pb-4 md:px-8">
           {children}
         </main>
       </body>
